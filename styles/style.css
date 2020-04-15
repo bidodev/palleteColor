@@ -1,0 +1,89 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Defines that 1rem by default is 10px
+ */
+html {
+  font-size: 62.5%;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 2rem;
+  /* 3 */
+  padding-right: 2rem;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+}
+
+p {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.colors__container {
+  height: 31vh;
+  background-color: #181818;
+  color: #f1f1f1;
+  border-radius: 0 0 5px 5px;
+}
+.colors__primary {
+  width: 20rem;
+  height: 20rem;
+  background-color: #ffc83f;
+}
+.colors__secondary {
+  width: 20rem;
+  height: 20rem;
+  background-color: #fa5e5b;
+}
+.colors__tertiary {
+  width: 20rem;
+  height: 20rem;
+  background-color: #1d508d;
+}
+.colors__quaternary {
+  width: 20rem;
+  height: 20rem;
+  background-color: #684e79;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvYmFzZS9fYmFzZS5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc2Nzcy9iYXNlL19oZWxwZXJzLnNjc3MiLCIuLi9zY3NzL2Fic3RyYWN0cy9fdmFyaWFibGVzLnNjc3MiLCIuLi9zY3NzL3BhZ2VzL19ob21lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSUE7O0VBQUE7QUFHQTtFQUNFLHNCQUFBO0FDSEY7O0FETUE7O0VBQUE7QUFHQTtFQUNFLGdCQUFBO0FDSEY7O0FETUE7Ozs7O0VBQUE7QUFNQTs7O0VBR0UsbUJBQUE7QUNIRjs7QUNwQkE7Ozs7O0VBQUE7QUFNQTtFQUNFLGlCQ0xVO0VES2EsTUFBQTtFQUN2QixpQkFBQTtFQUFtQixNQUFBO0VBQ25CLGtCQUFBO0VBQW9CLE1BQUE7RUFDcEIsa0JBQUE7RUFBb0IsTUFBQTtFQUNwQixtQkFBQTtFQUFxQixNQUFBO0VBQ3JCLFdBQUE7RUFBYSxNQUFBO0FENkJmOztBR3pDQTtFQUNFLGVBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw2QkFBQTtBSDRDRjs7QUd6Q0E7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw2QkFBQTtFQUNBLFlBQUE7QUg0Q0Y7O0FHeENFO0VBQ0UsWUFBQTtFQUNBLHlCQUFBO0VBQ0EsY0FBQTtFQUNBLDBCQUFBO0FIMkNKO0FHeENFO0VBQ0UsWUFBQTtFQUNBLGFBQUE7RUFDQSx5QkFBQTtBSDBDSjtBR3hDRTtFQUNFLFlBQUE7RUFDQSxhQUFBO0VBQ0EseUJBQUE7QUgwQ0o7QUd4Q0U7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHlCQUFBO0FIMENKO0FHeENFO0VBQ0UsWUFBQTtFQUNBLGFBQUE7RUFDQSx5QkFBQTtBSDBDSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
