@@ -1,7 +1,7 @@
 {
-  "name": "sassy-css-boilerplate",
+  "name": "color-pallete",
   "version": "1.0.0",
-  "description": "Sassy CSS Boilerplate including Sass 7-1 Pattern",
+  "description": "A simple color pallete",
   "main": "index.js",
   "scripts": {
     "start": "run-p liveserver watch:styles",
