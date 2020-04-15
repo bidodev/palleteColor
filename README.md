@@ -165,4 +165,4 @@ This folder will contain your built project, ready to be deployed online. It is 
 
 - Automatic [Sass](https://sass-lang.com/) transpilation
 - Development server powered by [live-server](https://www.npmjs.com/package/live-server) with automatic reload
-- Deployments to github pages with [gh-pages](https://www.npmjs.com/package/gh-pages)
+- Deployments to github pages with [gh-pages](https://www.npmjs.com/package/gh-pages)# palleteColor

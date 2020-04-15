@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+p {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.colors {
+  &__container {
+    height: 31vh;
+    background-color: color(bg-color);
+    color: color(text);
+    border-radius: 0 0 5px 5px;
+  }
+
+  &__primary {
+    width: 20rem;
+    height: 20rem;
+    background-color: color(primary);
+  }
+  &__secondary {
+    width: 20rem;
+    height: 20rem;
+    background-color: color(secondary);
+  }
+  &__tertiary {
+    width: 20rem;
+    height: 20rem;
+    background-color: color(tertiary);
+  }
+  &__quaternary {
+    width: 20rem;
+    height: 20rem;
+    background-color: color(quaternary);
+  }
+}
